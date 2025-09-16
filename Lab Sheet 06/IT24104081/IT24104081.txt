@@ -1,0 +1,27 @@
+##Setting the directory
+setwd("C:\\Users\\Randi\\Desktop\\ps lab 6\\ps lab")
+
+# Question 1
+n <- 50
+p <- 0.85
+
+# Distribution
+cat("X ~ Binomial(n=50, p=0.85)\n")
+
+# Probability at least 47 students passed
+prob1 <- 1 - pbinom(46, size=n, prob=p)
+cat("P(X >= 47) =", prob1, "\n")
+
+
+# Question 2
+lambda <- 12
+
+# Random Variable
+cat("Random Variable: X = number of calls per hour\n")
+
+# Distribution
+cat("X ~ Poisson(lambda = 12)\n")
+
+# Probability exactly 15 calls
+prob2 <- dpois(15, lambda)
+cat("P(X = 15) =", prob2, "\n")
